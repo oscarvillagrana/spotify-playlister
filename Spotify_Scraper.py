@@ -43,7 +43,7 @@ class Playlist(object)
         # using html file for input
         localSoup = BeautifulSoup(open(input("Enter a file to read: ")), "html.parser")
         soup = BeautifulSoup()
-        https://open.spotify.com/playlist/4xpdahEDHZudcCDqGQmD3h?si=KU9PsRMGTWeLNcR1WjTvTA
+        # https://open.spotify.com/playlist/4xpdahEDHZudcCDqGQmD3h?si=KU9PsRMGTWeLNcR1WjTvTA
         track_name = localSoup.find_all('div', class_='tracklist-name ellipsis-one-line')
         artist_name = localSoup.find_all('div', class_='tracklist-row__artist-name-link')
 
